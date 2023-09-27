@@ -1,0 +1,41 @@
+---
+users:
+  admin:
+    is_admin: true
+  ax:
+    groups:
+    - USER
+    - AX
+  babelway:
+    groups:
+    - USER
+    - BABELWAY
+  beneficiary_api:
+    groups:
+    - USER
+    - BENEFICIARY_API
+  partner_api:
+    groups:
+    - USER
+    - PARTNER_API
+
+groups:
+  AX:
+    methods:
+    - broadcastBrandInformation
+    - broadcastCountryInformation
+    - broadcastKitterInformation
+  BABELWAY:
+    methods:
+    - sendSalesOrderCreation
+    - sendSalesOrderForFulfillment
+  BENEFICIARY_API:
+    methods:
+    - addFavoriteActivity
+    - getActivities
+    - getActivitiesLocation
+  PARTNER_API:
+    methods:
+    - sendPartnerLoginRequest
+    - sendNonStayBookingCreationRequest
+    - getPartnerDetails
