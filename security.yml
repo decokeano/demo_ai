@@ -1,0 +1,42 @@
+---
+users:
+  admin:
+    is_admin: true
+  system_a:
+    groups:
+      - USER
+      - SYSTEM_A
+  system_b:
+    groups:
+      - USER
+      - SYSTEM_B
+  system_c:
+    groups:
+      - USER
+      - SYSTEM_C
+  system_d:
+    groups:
+      - USER
+      - SYSTEM_D
+
+groups:
+  SYSTEM_A:
+    methods:
+      - flowA
+      - flowB
+      - flowC
+  SYSTEM_B:
+    methods:
+      - flowA
+      - flowB
+      - flowC
+  SYSTEM_C:
+    methods:
+      - flowA
+      - flowB
+      - flowC
+  SYSTEM_D:
+    methods:
+      - flowA
+      - flowB
+      - flowC
